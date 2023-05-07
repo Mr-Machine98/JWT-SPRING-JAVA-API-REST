@@ -1,9 +1,9 @@
 ### Construyendo una API REST con Java Spring Usando Spring Security
 
 <div style="text-align:center">
-    <img src="[ruta/a/spring-logo.png](https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg)" alt="Spring Framework" width="100" height="100" style="margin-right: 30px">
-    <img src="[ruta/a/postgres-logo.png](https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg)" alt="PostgreSQL" width="100" height="100" style="margin-right: 30px">
-    <img src="![imagen](https://user-images.githubusercontent.com/74254687/236692714-d73a9823-a6c2-44df-aa4d-8910ea5be2aa.png)" alt="JavaScript" width="100" height="100">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg" alt="Spring Framework" width="100" height="100" style="margin-right: 30px">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="PostgreSQL" width="100" height="100" style="margin-right: 30px">
+    <img src="https://user-images.githubusercontent.com/74254687/236692714-d73a9823-a6c2-44df-aa4d-8910ea5be2aa.png" alt="JavaScript" width="100" height="100">
  <img src="https://seeklogo.com/images/J/jwt-io-json-web-token-logo-40E02494CD-seeklogo.com.png" alt="JWT" width="100" height="100">
 </div>
 
