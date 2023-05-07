@@ -7,7 +7,7 @@ Este proyecto es básicamente una `API REST` con seguridad utilizando `Jason Web
 - PostgreSql
 - JavaScript
 
->[!NOTE]
+> [!NOTE]
 >
 >Puedes instalar **Node.js** para ejecutar el archivo [JavaScript](https://github.com/Mr-Machine98/JWT-SPRING-JAVA-API-REST/blob/main/src/main/resources/templates/js/TestJsApiRest.js) y visualizar la respuesta de la API, o simplemente puedes utilizar Postman.
  
