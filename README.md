@@ -64,5 +64,63 @@ console.log(`Token -> ${token} \n`);
 // Token -> Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtci5tYWNoaW5lbWFuOThAZ21haWwuY29tIiwiZXhwIjoxNjgzNDg0NjA2LCJub21icmUiOiJKdWFuIENhbWlsbyBNYW1pYW4gUnVpeiJ9.ZnJzdi5vzucqPs8QOnZrFWAiPCTCoSvJaz9JEQ0OM1-IwWnexsZItjgobG84G6RaZZKKvtVJhYODD3vWLG6cjA 
 
  ```
+ El segundo paso es enviar el `TOKEN` junto con el `HEADER` `Authorization` y consultar el endpoint que necesitamos, en este caso estamos recuperando todos los productos:
+
+```javascript
+// send token and get all products
+headers.Authorization = token;
+console.log("Headers to send -> ", headers,"\n");
+res = await sendData(`${URL_API}/products/all`, undefined, headers, 'GET');
+let allProducts = await res.json();
+
+// produtcs
+console.log("All products -> " , allProducts);
+/**
+Output:
+   
+Headers to send ->  {
+  'Content-Type': 'application/json',
+  Authorization: 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtci5tYWNoaW5lbWFuOThAZ21haWwuY29tIiwiZXhwIjoxNjgzNDg0NjA2LCJub21icmUiOiJKdWFuIENhbWlsbyBNYW1pYW4gUnVpeiJ9.ZnJzdi5vzucqPs8QOnZrFWAiPCTCoSvJaz9JEQ0OM1-IwWnexsZItjgobG84G6RaZZKKvtVJhYODD3vWLG6cjA'
+} 
+
+All products ->  [
+  {
+    idProducto: 1,
+    nombre: 'Guayaba Feijoa',
+    idCategoria: 1,
+    codigoBarras: '7029 A42 23',
+    precioVenta: 300,
+    cantidadStock: 500,
+    estado: true,
+    categoria: { idCategoria: 1, descripcion: 'Frutas y verduras', estado: true }
+  },
+  {
+    idProducto: 2,
+    nombre: 'Mango',
+    idCategoria: 1,
+    codigoBarras: '0316 R56 01',
+    precioVenta: 2100,
+    cantidadStock: 250,
+    estado: true,
+    categoria: { idCategoria: 1, descripcion: 'Frutas y verduras', estado: true }
+  },
+  {
+    idProducto: 3,
+    nombre: 'Manzana',
+    idCategoria: 1,
+    codigoBarras: '7923 T23 19',
+    precioVenta: 700,
+    cantidadStock: 130,
+    estado: true,
+    categoria: { idCategoria: 1, descripcion: 'Frutas y verduras', estado: true }
+  },
+  
+  .
+  .
+  .
+
+*/
+```
+ 
  
  
