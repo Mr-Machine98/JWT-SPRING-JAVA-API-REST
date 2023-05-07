@@ -1,7 +1,8 @@
-### Construyendo una API REST con Java Spring Usando Spring Security
+## Construyendo una API REST con Java Spring Usando Spring Security
 
 
 
+### Tecnologías Usadas:
 
 <div style="text-align:center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg" alt="Spring Framework" width="100" height="100" style="margin-right: 30px">
