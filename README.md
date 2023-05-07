@@ -41,11 +41,25 @@ Este proyecto es básicamente una `API REST` con seguridad utilizando `Jason Web
  
  ### Explicación del archivo JS
  
- El primer paso es logearnos, necesitamos mandar un objeto `JSON` para la `API` nos entregue un `TOKEN`:
+ El primer paso es logearnos, necesitamos mandar un objeto `JSON` para que la `API` nos entregue un `TOKEN`:
  ```javascript
  let login = {
     email: "mr.machineman98@gmail.com",
     password: "123"
 };
  ```
+ Así mismo, mandamos la información indicando el contenido que vamos a mandar con los `HEADERS` y esperamos la respuesta:
+
+ ```javascript
+// headers
+let headers = {
+    'Content-Type': 'application/json'
+};
+
+// get token
+let res = await sendData(`${URL_API}/login`, login, headers, "POST");
+let token = [...res.headers][0][1];
+console.log(`Token -> ${token} \n`);
+ ```
+ 
  
