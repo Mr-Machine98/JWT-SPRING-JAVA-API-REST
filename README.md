@@ -1,6 +1,6 @@
 ## Construyendo una API REST con Java Spring Usando Spring Security
-
-
+<br/><br/>
+![JWT](https://www.vaadata.com/blog/wp-content/uploads/2016/12/JWT_tokens_EN.png)
 <br/><br/>
 ### Tecnologías Usadas:
 
