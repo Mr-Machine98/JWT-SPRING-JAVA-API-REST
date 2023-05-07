@@ -60,6 +60,9 @@ let headers = {
 let res = await sendData(`${URL_API}/login`, login, headers, "POST");
 let token = [...res.headers][0][1];
 console.log(`Token -> ${token} \n`);
+// Output Example: 
+// Token -> Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtci5tYWNoaW5lbWFuOThAZ21haWwuY29tIiwiZXhwIjoxNjgzNDg0NjA2LCJub21icmUiOiJKdWFuIENhbWlsbyBNYW1pYW4gUnVpeiJ9.ZnJzdi5vzucqPs8QOnZrFWAiPCTCoSvJaz9JEQ0OM1-IwWnexsZItjgobG84G6RaZZKKvtVJhYODD3vWLG6cjA 
+
  ```
  
  
